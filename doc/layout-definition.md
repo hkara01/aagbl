@@ -1,8 +1,9 @@
-#Layout definition format
+# Layout definition format
 
 The layout is defined in WYSIWYG style in a text string (or file).
 
 You can only make rectangles, inside one big rectangle.
+The rectangles must be disjoint, they can not be nested.
 
 In each rectangle, you can put a name (a letter, followed by letters or numbers).
 
@@ -32,21 +33,22 @@ The leftmost and rightmost lines don't count as a separator.
 
 Inside this grid, you have 3 boxes :
 
-Box A : 1 line x 17 columns
-Box B : 1 line x 9 columns
-Box C : 3 lines x 27 columns
+- Box A : 1 line x 17 columns
+- Box B : 1 line x 9 columns
+- Box C : 3 lines x 27 columns
 
+The  anchors :
 
-A will have an anchor on North and South.
+- A will have an anchor on North and South.
+- B will have an anchor on North, East and South.
+- C will have no anchors.
 
-B will have an anchor on North, East and South.
-
-C will have no anchors.
-
-A cell must always be rectangular, but can be made from sub-cells.
+A cell must always be rectangular, but can be made from joined cells, just like in the GridBagLayout.
 
 Examples of accepted layout :
 
+
+~~~~ ascii
     +-----+-----+-----+-------+
     |     |     |     |       |
     |  A  |  D  |  E  |   G   |
@@ -72,8 +74,10 @@ Examples of accepted layout :
     |                         |
     |            L            |
     +-------------------------+
+~~~~
 
-Examples of forbidden layout (non-rectangular zones) :
+Examples of forbidden layout (non-rectangular zones, nested
+rectangles) :
 
     +-----------+-----+-------+
     |           |     |       |

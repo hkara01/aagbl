@@ -1,3 +1,8 @@
+/**
+ * Calculator as a groovy script example. Execution example (adapt to your env.) :
+ * C:\hk\jb\aagbl\src\test\java>set CLASSPATH=C:\hk\jb\aagbl\build\libs\aagbl-1.0.jar
+ * C:\hk\jb\aagbl\src\test\java>c:\groovy-4.0.6\bin\groovy org/hkmi2/aagbl/tests/Calculator.groovy
+ */
 package org.hkmi2.aagbl
 
 import javax.swing.*

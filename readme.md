@@ -165,3 +165,5 @@ You can have a look at the Calculator demo written as a groovy script to see for
 
     /src/test/java/org/hkmi2/aagbl/tests/Calculator.groovy
 
+For step-by-step instructions on using Groovy with aagbl, have
+a look at [starting-with-aagbl](doc/starting-with-aagbl.md).
