@@ -167,3 +167,5 @@ You can have a look at the Calculator demo written as a groovy script to see for
 
 For step-by-step instructions on using Groovy with aagbl, have
 a look at [starting-with-aagbl](doc/starting-with-aagbl.md).
+
+(2024)
